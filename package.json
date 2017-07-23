@@ -45,5 +45,16 @@
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwat1/rides.git"
+  },
+  "author": "pwat",
+  "bugs": {
+    "url": "https://github.com/pwat1/rides/issues"
+  },
+  "homepage": "https://github.com/pwat1/rides#readme"
 }
