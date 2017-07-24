@@ -5,7 +5,8 @@ var RequestSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
   phone: String,
-  address: String
+  address: String,
+  lunch: Boolean
 });
 mongoose.model('Request', RequestSchema);
 

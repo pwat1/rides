@@ -25,7 +25,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
 app.use(require('express-session')({
     secret: 'keyboard cat',
     resave: false,
@@ -36,6 +36,10 @@ app.use(passport.session());
 
 app.use('/api', index);
 app.use('/api/user', user);
+
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+})
 //app.use('/sms', sms);
 
 // passport config
